@@ -18,6 +18,7 @@ pip install msal requests
 # TODO
 ## docker/podman   
 ## Ask for variables at run time, ability to save those and run from a config file  
+## Fix/verify the mark as read is working properly
 
 
 
