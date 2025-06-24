@@ -46,7 +46,7 @@ def fetch_new_messages(token, delta_link):
     else:
         # first time: get all unread messages matching subject
         filter_q = ("isRead eq false and subject eq "
-                    f"'{REPORT_SUBJ}'")
+                    f"'{R_SUBJECT}'")
         url = (f'https://graph.microsoft.com/v1.0/users/{USER_EMAIL}/'
                f'mailFolders/Inbox/messages?'
                f'$filter={filter_q}&$select=id&$top=50')
